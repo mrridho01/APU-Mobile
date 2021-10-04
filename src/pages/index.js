@@ -1,0 +1,1 @@
+import splashScreen from './SplashScreen';
