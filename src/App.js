@@ -1,11 +1,15 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {SplashScreen} from './pages';
+import Router from './router';
 
 const App = () => {
   return (
-    <View>
-      <Text></Text>
-    </View>
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+    // <SplashScreen />
   );
 };
 
