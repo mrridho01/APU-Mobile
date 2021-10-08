@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 const ButtonCustom = ({title, onPress}) => {
   return (
@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   title: {
-    fontFamily: 'Nunito-Bold',
-    fontSize: 28,
+    fontFamily: 'Lato-Bold',
+    fontSize: 24,
     color: '#FFFFFF',
     textAlign: 'center',
   },

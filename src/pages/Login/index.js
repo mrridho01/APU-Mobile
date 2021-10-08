@@ -12,20 +12,24 @@ const Login = () => {
       </View>
       <FormInput
         label="Email APU"
-        placeholder={'Alamat Email APU'}
+        placeholder="Alamat Email APU"
         keyboard="email-address"
+        autoCapitalize="none"
+        returnKeyLabel="next"
         marginBottom={16}
       />
       <FormInput
         label="Password"
         placeholder="Password"
         keyboard="default"
+        autoCapitalize="none"
+        returnKeyLabel="next"
         password
       />
       <Text style={styles.hint}>
         Harap menghubungi admin apabila lupa password
       </Text>
-      <ButtonCustom title="Login" onPress={() => alert('Button pressed')} />
+      <ButtonCustom title="Login" onPress={() => alert({})} />
     </KeyboardAvoidingView>
   );
 };
@@ -33,20 +37,18 @@ const Login = () => {
 export default Login;
 
 const styles = StyleSheet.create({
-  keyboardAvoiding: {
-    // flex: 1,
-    // padding: 12,
-    // backgroundColor: 'red',
-  },
   container: {
-    paddingTop: 44,
+    flex: 1,
+    justifyContent: 'center',
     paddingHorizontal: 27,
+    // backgroundColor: '#FEFEFE',
   },
   illustration: {
     marginBottom: 28,
+    alignItems: 'center',
   },
   hint: {
-    fontFamily: 'Nunito-Regular',
+    fontFamily: 'Lato-Regular',
     color: '#B2ACAC',
     fontSize: 12,
     marginTop: 8,

@@ -8,7 +8,14 @@ import {
 } from 'react-native';
 import {ILEyeClose, ILEyeOpen} from '../../asset';
 
-const FormInput = ({label, password, placeholder, keyboard, marginBottom}) => {
+const FormInput = ({
+  label,
+  password,
+  placeholder,
+  keyboard,
+  marginBottom,
+  autoCapitalize,
+}) => {
   const [text, setText] = useState(null);
   const [secure, setSecure] = useState(true);
 
@@ -22,7 +29,7 @@ const FormInput = ({label, password, placeholder, keyboard, marginBottom}) => {
             secureTextEntry={secure}
             placeholder={placeholder}
             placeholderTextColor={'#B2ADAD'}
-            returnKeyType="done"
+            autoCapitalize={autoCapitalize}
             value={text}
             style={styles.text}
             keyboardType={keyboard}
@@ -43,7 +50,7 @@ export default FormInput;
 
 const styles = StyleSheet.create({
   label: {
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: 'Lato-Bold',
     fontSize: 18,
     color: '#004871',
     marginBottom: 7,
