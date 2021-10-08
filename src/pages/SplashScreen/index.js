@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {ImageBackground, StyleSheet, Text, View} from 'react-native';
+import {ImageBackground, StyleSheet, View} from 'react-native';
 import {ILBackgroundSplashScreen, ILSplashScreen} from '../../asset';
 
 const SplashScreen = ({navigation}) => {

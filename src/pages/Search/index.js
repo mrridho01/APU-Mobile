@@ -1,14 +1,16 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {HeaderMenu} from '../../components';
 
-const HomePage = () => {
+const Search = () => {
   return (
     <View>
-      <Text></Text>
+      <HeaderMenu />
+      <Text>Search</Text>
     </View>
   );
 };
 
-export default HomePage;
+export default Search;
 
 const styles = StyleSheet.create({});

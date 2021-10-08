@@ -8,7 +8,6 @@ const App = () => {
     <NavigationContainer>
       <Router />
     </NavigationContainer>
-    // <SplashScreen />
   );
 };
 

@@ -4,7 +4,7 @@ import {ILLogin} from '../../asset';
 import {ButtonCustom} from '../../components';
 import FormInput from '../../components/FormInput';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <View style={styles.illustration}>
@@ -15,7 +15,6 @@ const Login = () => {
         placeholder="Alamat Email APU"
         keyboard="email-address"
         autoCapitalize="none"
-        returnKeyLabel="next"
         marginBottom={16}
       />
       <FormInput
@@ -23,13 +22,15 @@ const Login = () => {
         placeholder="Password"
         keyboard="default"
         autoCapitalize="none"
-        returnKeyLabel="next"
         password
       />
       <Text style={styles.hint}>
         Harap menghubungi admin apabila lupa password
       </Text>
-      <ButtonCustom title="Login" onPress={() => alert({})} />
+      <ButtonCustom
+        title="Login"
+        onPress={() => navigation.navigate('MainApp')}
+      />
     </KeyboardAvoidingView>
   );
 };
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 27,
-    // backgroundColor: '#FEFEFE',
   },
   illustration: {
     marginBottom: 28,

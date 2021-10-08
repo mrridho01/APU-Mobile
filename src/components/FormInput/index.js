@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Lato-Bold',
     fontSize: 18,
-    color: '#004871',
+    color: '#404040',
     marginBottom: 7,
   },
   wrapper: marginBottom => ({
     marginBottom: marginBottom,
     paddingHorizontal: 8,
-    borderColor: '#248CC2',
+    borderColor: '#404040',
     borderWidth: 1,
     borderRadius: 4,
     flexDirection: 'row',
