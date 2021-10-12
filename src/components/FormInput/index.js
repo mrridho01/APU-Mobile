@@ -28,7 +28,7 @@ const FormInput = ({
             underlineColorAndroid="transparent"
             secureTextEntry={secure}
             placeholder={placeholder}
-            placeholderTextColor={'#B2ADAD'}
+            placeholderTextColor={'#AEAEAE'}
             autoCapitalize={autoCapitalize}
             value={text}
             style={styles.text}
@@ -52,25 +52,24 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Lato-Bold',
     fontSize: 18,
-    color: '#404040',
+    color: '#FFFFFF',
     marginBottom: 7,
   },
   wrapper: marginBottom => ({
     marginBottom: marginBottom,
     paddingHorizontal: 8,
-    borderColor: '#404040',
-    borderWidth: 1,
     borderRadius: 4,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    backgroundColor: '#FFFFFF',
   }),
   inputWrapper: {
     flex: 1,
   },
   text: {
-    fontFamily: 'Nunito-Regular',
+    fontFamily: 'Lato-Regular',
     fontSize: 18,
-    color: '#565656',
+    color: '#646464',
   },
 });

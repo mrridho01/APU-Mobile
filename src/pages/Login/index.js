@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, View, Text, KeyboardAvoidingView} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  KeyboardAvoidingView,
+  Image,
+} from 'react-native';
 import {ILLogin} from '../../asset';
 import {ButtonCustom} from '../../components';
 import FormInput from '../../components/FormInput';
@@ -8,7 +14,7 @@ const Login = ({navigation}) => {
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <View style={styles.illustration}>
-        <ILLogin />
+        <Image source={ILLogin} style={styles.logo} />
       </View>
       <FormInput
         label="Email APU"
@@ -29,7 +35,7 @@ const Login = ({navigation}) => {
       </Text>
       <ButtonCustom
         title="Login"
-        onPress={() => navigation.navigate('MainApp')}
+        onPress={() => navigation.replace('MainApp')}
       />
     </KeyboardAvoidingView>
   );
@@ -42,6 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 27,
+    backgroundColor: '#003EA7',
   },
   illustration: {
     marginBottom: 28,
@@ -49,10 +56,14 @@ const styles = StyleSheet.create({
   },
   hint: {
     fontFamily: 'Lato-Regular',
-    color: '#B2ACAC',
+    color: '#FFFFFF',
     fontSize: 12,
     marginTop: 8,
     textAlign: 'center',
     marginBottom: 36,
+  },
+  logo: {
+    width: 122,
+    height: 128,
   },
 });

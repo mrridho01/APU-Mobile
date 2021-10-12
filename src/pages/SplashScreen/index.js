@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {ImageBackground, StyleSheet, View} from 'react-native';
+import {Image, ImageBackground, StyleSheet, View} from 'react-native';
 import {ILBackgroundSplashScreen, ILSplashScreen} from '../../asset';
 
 const SplashScreen = ({navigation}) => {
@@ -9,14 +9,9 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={ILBackgroundSplashScreen}
-        resizeMode="cover"
-        style={styles.background}>
-        <View style={styles.content}>
-          <ILSplashScreen />
-        </View>
-      </ImageBackground>
+      <View style={styles.content}>
+        <Image source={ILSplashScreen} style={styles.logo} />
+      </View>
     </View>
   );
 };
@@ -27,13 +22,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    backgroundColor: '#003EA7',
   },
   background: {
     flex: 1,
   },
   content: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  logo: {
+    width: 122,
+    height: 128,
   },
 });
