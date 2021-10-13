@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
     paddingVertical: 11,
     borderBottomRightRadius: 4,
     borderBottomLeftRadius: 4,
-    // borderWidth: 0.8,
-    // borderColor: 'gray',
     backgroundColor: '#FFFFFF',
+    justifyContent: 'center',
+    shadowColor: 'rgba(0,0,0,1)',
+    elevation: 4,
   },
   leftSide: {
     flexDirection: 'row',
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   desc: {
-    fontFamily: 'Lato-Italic',
+    fontFamily: 'Lato-Regular',
     fontSize: 14,
     color: '#B2ACAC',
   },

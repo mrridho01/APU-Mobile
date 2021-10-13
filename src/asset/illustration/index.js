@@ -15,7 +15,10 @@ import ILSearchInactive from './ILSearchInactive.svg';
 import ILArchieveActive from './ILArchieveActive.svg';
 import ILArchieveInactive from './ILArchieveInactive.svg';
 import ILAssetActive from './ILAssetActive.svg';
-import ILAssetInactive from './ILAssetInactive';
+import ILAssetInactive from './ILAssetInactive.svg';
+import ILProjectDFR from './ILProjectDFR.svg';
+import ILProjectSprecher from './ILProjectSprecher.svg';
+import ILProjectEngineering from './ILProjectEngineering.svg';
 
 export {
   ILSplashScreen,
@@ -36,4 +39,7 @@ export {
   ILArchieveInactive,
   ILAssetActive,
   ILAssetInactive,
+  ILProjectDFR,
+  ILProjectSprecher,
+  ILProjectEngineering,
 };
