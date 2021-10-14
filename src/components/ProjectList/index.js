@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Lato-Bold',
     color: '#404040',
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 12,
   },
   categoryCustomer: {

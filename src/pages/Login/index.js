@@ -5,39 +5,45 @@ import {
   Text,
   KeyboardAvoidingView,
   Image,
+  ImageBackground,
 } from 'react-native';
-import {ILLogin} from '../../asset';
+import {ILBackgroundLogin, ILLogin} from '../../asset';
 import {ButtonCustom} from '../../components';
 import FormInput from '../../components/FormInput';
 
 const Login = ({navigation}) => {
   return (
-    <KeyboardAvoidingView style={styles.container} behavior="padding">
-      <View style={styles.illustration}>
-        <Image source={ILLogin} style={styles.logo} />
-      </View>
-      <FormInput
-        label="Email APU"
-        placeholder="Alamat Email APU"
-        keyboard="email-address"
-        autoCapitalize="none"
-        marginBottom={16}
-      />
-      <FormInput
-        label="Password"
-        placeholder="Password"
-        keyboard="default"
-        autoCapitalize="none"
-        password
-      />
-      <Text style={styles.hint}>
-        Harap menghubungi admin apabila lupa password
-      </Text>
-      <ButtonCustom
-        title="Login"
-        onPress={() => navigation.replace('MainApp')}
-      />
-    </KeyboardAvoidingView>
+    <ImageBackground
+      source={ILBackgroundLogin}
+      resizeMode="cover"
+      style={styles.background}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding">
+        <View style={styles.illustration}>
+          <Image source={ILLogin} style={styles.logo} />
+        </View>
+        <FormInput
+          label="Email APU"
+          placeholder="Alamat Email APU"
+          keyboard="email-address"
+          autoCapitalize="none"
+          marginBottom={16}
+        />
+        <FormInput
+          label="Password"
+          placeholder="Password"
+          keyboard="numeric"
+          autoCapitalize="none"
+          password
+        />
+        <Text style={styles.hint}>
+          Harap menghubungi admin apabila lupa password
+        </Text>
+        <ButtonCustom
+          title="Login"
+          onPress={() => navigation.replace('MainApp')}
+        />
+      </KeyboardAvoidingView>
+    </ImageBackground>
   );
 };
 
@@ -48,11 +54,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 27,
-    backgroundColor: '#003EA7',
+    position: 'relative',
+    // backgroundColor: '#003EA7',
   },
   illustration: {
-    marginBottom: 28,
     alignItems: 'center',
+    position: 'absolute',
+    top: '10%',
+    left: 0,
+    right: 0,
   },
   hint: {
     fontFamily: 'Lato-Regular',
@@ -65,5 +75,8 @@ const styles = StyleSheet.create({
   logo: {
     width: 122,
     height: 128,
+  },
+  background: {
+    flex: 1,
   },
 });

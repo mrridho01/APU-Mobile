@@ -87,7 +87,14 @@ const Progress = () => {
         {/* Project End */}
 
         {/* Task Start */}
-
+        <View style={styles.sectionWrapper}>
+          <View style={styles.labelWrapper}>
+            <Text style={styles.label}>My Task</Text>
+            <TouchableOpacity onPress={() => alert('Lihat semua')}>
+              <Text style={styles.link}>Lihat Semua</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
         {/* Task End */}
       </ScrollView>
     </View>

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import {Image, ImageBackground, StyleSheet, View} from 'react-native';
-import {ILBackgroundSplashScreen, ILSplashScreen} from '../../asset';
+import {Image, StyleSheet, View} from 'react-native';
+import {ILSplashScreen} from '../../asset';
 
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#003EA7',
+    backgroundColor: '#008AD8',
   },
   background: {
     flex: 1,

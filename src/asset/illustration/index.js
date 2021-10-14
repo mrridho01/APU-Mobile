@@ -19,6 +19,7 @@ import ILAssetInactive from './ILAssetInactive.svg';
 import ILProjectDFR from './ILProjectDFR.svg';
 import ILProjectSprecher from './ILProjectSprecher.svg';
 import ILProjectEngineering from './ILProjectEngineering.svg';
+import ILBackgroundLogin from './ILBackgroundLogin.png';
 
 export {
   ILSplashScreen,
@@ -42,4 +43,5 @@ export {
   ILProjectDFR,
   ILProjectSprecher,
   ILProjectEngineering,
+  ILBackgroundLogin,
 };
