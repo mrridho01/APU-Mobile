@@ -18,12 +18,8 @@ const BottomTab = ({state, descriptors, navigation}) => {
     switch (label) {
       case 'Progress':
         return focus ? <ILProgressActive /> : <ILProgressInactive />;
-      case 'Prospek':
-        return focus ? <ILProspekActive /> : <ILProspekInactive />;
       case 'Search':
         return focus ? <ILSearchActive /> : <ILSearchInactive />;
-      case 'Archieve':
-        return focus ? <ILArchieveActive /> : <ILArchieveInactive />;
       case 'Asset':
         return focus ? <ILAssetActive /> : <ILAssetInactive />;
       default:

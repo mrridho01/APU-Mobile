@@ -7,9 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import ReactNativeCalendarStrip from 'react-native-calendar-strip';
-import {Agenda} from 'react-native-calendars';
-import {HeaderMenu, ProjectList} from '../../components';
+import {HeaderMenu, ProjectList, ProspekList} from '../../components';
 
 const Progress = () => {
   const [refresh, setRefresh] = useState(false);
@@ -28,32 +26,7 @@ const Progress = () => {
         }
         showsVerticalScrollIndicator={false}
         style={styles.scroll}>
-        {/* Agenda Start */}
-        <View style={styles.sectionWrapper}>
-          <View style={styles.labelWrapper}>
-            <Text style={styles.label}>Agenda</Text>
-            <TouchableOpacity onPress={() => alert('Lihat semua')}>
-              <Text style={styles.link}>Lihat Semua</Text>
-            </TouchableOpacity>
-          </View>
-          <Text style={styles.subsection}>This Week</Text>
-          <View
-            style={{
-              height: 120,
-              backgroundColor: 'gray',
-              marginBottom: 12,
-            }}></View>
-          {/* <Agenda /> */}
-          <Text style={styles.subsection}>Oncoming</Text>
-          <View
-            style={{
-              height: 120,
-              backgroundColor: 'gray',
-              marginBottom: 12,
-            }}></View>
-        </View>
-        {/* Agenda End */}
-
+        <View style={styles.headerGap}></View>
         {/* Project Start */}
         <View style={styles.sectionWrapper}>
           <View style={styles.labelWrapper}>
@@ -86,16 +59,24 @@ const Progress = () => {
         </View>
         {/* Project End */}
 
-        {/* Task Start */}
+        {/* Prospek Start */}
         <View style={styles.sectionWrapper}>
           <View style={styles.labelWrapper}>
-            <Text style={styles.label}>My Task</Text>
+            <Text style={styles.label}>Prospek</Text>
             <TouchableOpacity onPress={() => alert('Lihat semua')}>
               <Text style={styles.link}>Lihat Semua</Text>
             </TouchableOpacity>
           </View>
+          <ProspekList
+            title="RTU GI/GH"
+            precustomer="PT. PLN (Persero) UP2D Sumatera Barat"
+          />
+          <ProspekList
+            title="DFR Tersebar Kalimantan"
+            precustomer="PT. PLN (Persero) UIKL Kalimantan"
+          />
         </View>
-        {/* Task End */}
+        {/* Prospek End */}
       </ScrollView>
     </View>
   );
@@ -105,16 +86,20 @@ export default Progress;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#003EA7',
+    backgroundColor: '#008AD8',
     flex: 1,
   },
   scroll: {
     flex: 1,
   },
+  headerGap: {
+    marginBottom: 20,
+  },
   sectionWrapper: {
-    marginTop: 20,
+    // marginTop: 20,
     marginBottom: 20,
     padding: 12,
+    // paddingBottom: -12,
     flex: 1,
     borderRadius: 4,
     backgroundColor: '#FFFFFF',

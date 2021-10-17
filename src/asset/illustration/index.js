@@ -20,6 +20,7 @@ import ILProjectDFR from './ILProjectDFR.svg';
 import ILProjectSprecher from './ILProjectSprecher.svg';
 import ILProjectEngineering from './ILProjectEngineering.svg';
 import ILBackgroundLogin from './ILBackgroundLogin.png';
+import ILProspek from './ILProspek.svg';
 
 export {
   ILSplashScreen,
@@ -44,4 +45,5 @@ export {
   ILProjectSprecher,
   ILProjectEngineering,
   ILBackgroundLogin,
+  ILProspek,
 };

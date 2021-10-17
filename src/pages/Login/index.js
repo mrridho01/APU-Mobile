@@ -31,7 +31,7 @@ const Login = ({navigation}) => {
         <FormInput
           label="Password"
           placeholder="Password"
-          keyboard="numeric"
+          keyboard="default"
           autoCapitalize="none"
           password
         />
@@ -59,10 +59,8 @@ const styles = StyleSheet.create({
   },
   illustration: {
     alignItems: 'center',
-    position: 'absolute',
-    top: '10%',
-    left: 0,
-    right: 0,
+    marginTop: -64,
+    marginBottom: 40,
   },
   hint: {
     fontFamily: 'Lato-Regular',

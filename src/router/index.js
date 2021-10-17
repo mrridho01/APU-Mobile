@@ -36,9 +36,7 @@ const MainApp = () => {
       backBehavior="order"
       tabBar={props => <BottomTab {...props} />}>
       <Tab.Screen name="Progress" component={Progress} />
-      <Tab.Screen name="Prospek" component={Prospek} />
       <Tab.Screen name="Search" component={Search} />
-      <Tab.Screen name="Archieve" component={Archieve} />
       <Tab.Screen name="Asset" component={Asset} />
     </Tab.Navigator>
   );
